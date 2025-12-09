@@ -1,0 +1,17 @@
+[
+    {
+        "serviceName": "自社アプリ「〇〇」",
+        "status": "normal",
+        "message": "正常に稼働しています"
+    },
+    {
+        "serviceName": "自社アプリ「△△」",
+        "status": "maintenance",
+        "message": "現在メンテナンス中です（終了予定: 15:00）"
+    },
+    {
+        "serviceName": "マインクラフトサーバー",
+        "status": "issue",
+        "message": "一部接続しにくい障害が発生しています"
+    }
+]

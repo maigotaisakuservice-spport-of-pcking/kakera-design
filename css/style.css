@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap');
+
+/* 基本スタイル */
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    line-height: 1.8;
+    color: #555;
+    background-color: #fcfaf5; /* ほんのりクリーム色 */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #f5a623; /* 温かみのあるオレンジ */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f7c948;
+}
+
+h1, h2, h3 {
+    color: #4a4a4a;
+    font-weight: 700;
+}
+
+/* 全体のレイアウト */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* ヘッダー */
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #f0e5d1;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav a {
+    font-weight: 700;
+    font-size: 16px;
+    color: #5aa1a9; /* 落ち着いたグリーン */
+}
+
+/* フッター */
+footer {
+    background-color: #4a4a4a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+/* カードスタイル */
+section > ul, .service-status, #news-container article, form {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0e5d1;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+/* ニュースページ */
+#news-container article {
+    margin-bottom: 20px;
+    border-left: 5px solid #5aa1a9;
+}
+
+#news-container h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+#news-container p:first-of-type { /* 日付のスタイル */
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+/* システム稼働状況ページ */
+.service-status {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-left-width: 5px;
+    border-left-style: solid;
+}
+
+.status-normal {
+    border-left-color: #7ed321; /* 緑 */
+}
+
+.status-maintenance {
+    border-left-color: #f5a623; /* オレンジ */
+}
+
+.status-issue {
+    border-left-color: #d0021b; /* 赤 */
+}
+
+.service-status h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* お問い合わせフォーム */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+form button {
+    background-color: #5aa1a9;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #4a8d94;
+}
+
+
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    section > ul, .service-status, #news-container article, form {
+        padding: 15px 20px;
+    }
+}
